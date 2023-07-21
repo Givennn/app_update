@@ -37,7 +37,7 @@ module SettingHelper
     end
 
     def site_https
-      Rails.env.production? || ENV['ZEALOT_USE_HTTPS'].present?
+      ENV['ZEALOT_USE_HTTPS'].present?
     end
 
     def site_configs
