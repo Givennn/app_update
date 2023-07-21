@@ -59,8 +59,8 @@ jobs:
       uses: docker/metadata-action@v4
       with:
         images: |
-          givenrobot/app_update
-          ghcr.io/givenrobot/app_update
+          ${{ github.repository }}
+          ghcr.io/${{ github.repository }}
         tags: |
           type=raw,value=${{ env.DOCKER_TAG }}
           type=raw,value=${{ env.DOCKER_TAG }}-${{ steps.build_date.outputs.BUILD_DATE_TAG }}
