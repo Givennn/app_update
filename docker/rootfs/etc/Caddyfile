@@ -3,6 +3,7 @@
 }
 
 :80
+localhost
 root * /{$ZEALOT_PATH:app}/public
 encode zstd gzip
 file_server
